@@ -72,7 +72,7 @@
         <!-- Template generator core -->
         <dependency>
             <groupId>org.getthedocs.documentengine</groupId>
-            <artifactId>document-engine-core</artifactId>
+            <artifactId>docs-core</artifactId>
             <version>0.1.0</version>
         </dependency>
 
