@@ -17,7 +17,7 @@ on:
 
 env:
   API_DOCKER_REGISTRY: ghcr.io
-  API_DOCKER_IMAGE_NAME: ${{ github.repository_owner }}/docs-generator-api
+  API_DOCKER_IMAGE_NAME: ${{ github.repository_owner }}/document-engine-service
 
 permissions:
   pull-requests: read # allows SonarCloud to decorate PRs with analysis results

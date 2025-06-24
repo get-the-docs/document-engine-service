@@ -330,8 +330,8 @@
                         </goals>
                         <phase>process-sources</phase>
                         <configuration>
-                            <organizationName>Levente Ban</organizationName>
-                            <inceptionYear>2021</inceptionYear>
+                            <organizationName>GetTheDocs.org</organizationName>
+                            <inceptionYear>2025</inceptionYear>
                             <roots>
                                 <root>src/main/java</root>
                                 <root>src/test</root>
