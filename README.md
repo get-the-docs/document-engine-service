@@ -2,7 +2,7 @@
 
 [![Build](https://github.com/get-the-docs/document-engine-service/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/get-the-docs/document-engine-service/actions/workflows/build.yml)
 [![Sonar Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=get-the-docs_document-engine-service&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=get-the-docs_document-engine-service)
-[![Codecov branch](https://img.shields.io/codecov/c/github/get-the-docs/document-engine-service/main?label=Coverage)](https://codecov.io/gh/get-the-docs/document-engine-service)
+[![codecov](https://codecov.io/gh/get-the-docs/document-engine-service/graph/badge.svg?token=qoNnzgbT4V)](https://codecov.io/gh/get-the-docs/document-engine-service)
 
 - java 17
 - spring-boot 3.3

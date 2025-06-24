@@ -245,7 +245,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: ./document-engine-service
+#          context: ./document-engine-service
           push: true
           #          push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
@@ -272,16 +272,4 @@ jobs:
           name: trivy-report
           path: trivy-report.json
           retention-days: 30
-
-#      - name: Fail build on High/Criticial Vulnerabilities
-#        uses: aquasecurity/trivy-action@0.30.0
-#        with:
-#          scan-type: "fs"
-#          format: table
-#          scan-ref: .
-#          severity: HIGH,CRITICAL
-#          ignore-unfixed: true
-#          exit-code: 1
-#          # On a subsequent call to the action we know trivy is already installed so can skip this
-#          skip-setup-trivy: true
 
