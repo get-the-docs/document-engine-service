@@ -2,9 +2,9 @@ package org.getthedocs.documentengine.api.document;
 
 /*-
  * #%L
- * docs-service-api
+ * document-engine-service
  * %%
- * Copyright (C) 2021 Levente Ban
+ * Copyright (C) 2025 Levente Ban
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

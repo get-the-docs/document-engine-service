@@ -183,7 +183,7 @@ jobs:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   docker_build_job:
-    name: Containerize docs-generator-api
+    name: Containerize document-engine-service
     needs:
       - test_job
       - coverage_job
@@ -218,7 +218,7 @@ jobs:
         run: mvn -B package --file pom.xml -DskipTests=true
 
       #      - name: Build the Docker image
-      #        working-directory: ./docs-generator-api
+      #        working-directory: ./document-engine-service
       #        run: docker build -t ${{ env.API_DOCKER_REGISTRY }}/${{ env.API_DOCKER_IMAGE_NAME }} --file Dockerfile .
 
       - name: Set up QEMU
@@ -245,14 +245,14 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: ./docs-generator-api
+          context: ./document-engine-service
           push: true
           #          push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Pull back the Docker image for the Trivy scan
-        working-directory: ./docs-generator-api
+        working-directory: ./document-engine-service
         run: docker pull ${{ steps.meta.outputs.tags }}
 
       # The first call to the action will invoke setup-trivy and install trivy
