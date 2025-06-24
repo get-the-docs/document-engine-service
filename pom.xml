@@ -75,6 +75,11 @@
             <artifactId>docs-core</artifactId>
             <version>0.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.getthedocs.documentengine</groupId>
+            <artifactId>docs-core-api</artifactId>
+            <version>0.1.0</version>
+        </dependency>
 
         <!-- Spring boot -->
         <dependency>
@@ -314,7 +319,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/test/resources/document-api-v1.yaml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/document-api-v1.yaml</inputSpec>
                             <ignoreFileOverride>${project.basedir}/.openapi-generator-ignore</ignoreFileOverride>
                             <generatorName>spring</generatorName>
                             <configOptions>

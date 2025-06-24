@@ -139,7 +139,7 @@ public class DefaultTemplateApiService implements TemplateApiService {
             }
             return result;
 
-        } catch (final TemplateServiceException | TemplateServiceRuntimeException e) {
+        } catch (final TemplateServiceRuntimeException e) {
             log.warn("Error processing request: {}", id);
 
             return Optional.empty();
